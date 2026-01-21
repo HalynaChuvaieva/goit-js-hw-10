@@ -2,6 +2,12 @@
 * {
   box-sizing: border-box;
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 body{
   font-family: "Montserrat", sans-serif;
   padding: 36px 156px;
@@ -78,4 +84,36 @@ button:disabled{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input-delay{
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border-color 250ms ease-in-out;
+  margin-top: 8px;
+  outline: transparent;
+  padding: 8px 16px;
+  font-family: inherit;
+  display: block;
+}
+.input-delay:hover{
+  border-color: #000;
+}
+.input-delay:focus:not(:placeholder-shown) {
+  border-color: #4e75ff;
+}
+.state{
+  width: 360px;
+  height: 64px;
+  border: 1px solid #808080;
+  display: flex;
+  gap: 48px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+.create-btn{
+  width: 360px;
+  height: 40px;
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+    <form class="form">
+    <label class="delay">
+    Delay (ms)
+    <input class="input-delay" type="number" name="delay" required />
+  </label>
+
+  <fieldset class="state">
+    <legend>State</legend>
+    <label class="radio">
+      <input type="radio" name="state" value="fulfilled" required />
+      Fulfilled
+    </label>
+    <label class="radio">
+      <input class="radio" type="radio" name="state" value="rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button class="create-btn" type="submit">Create notification</button>
+</form>
+
+    </main>
+    <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+</html>
